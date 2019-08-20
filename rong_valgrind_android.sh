@@ -23,8 +23,7 @@ install_valgrind() {
 		echo "kurt v8a"
 	fi
 	echo "DEVICE_CPU_TYPE: $DEVICE_CPU_TYPE"
-        DEVICE_CPU_TYPE="ARMv7"
-	
+
 	rm -rf ./Inst
 	echo "Unzip valgrind package..."
 	case $DEVICE_CPU_TYPE in
