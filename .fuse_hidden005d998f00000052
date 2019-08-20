@@ -1,0 +1,201 @@
+--------- beginning of main
+08-20 16:51:00.009  7847  7847 D KeyguardUpdateMonitor: handleTimeUpdate
+08-20 16:51:09.934  7686  7803 D CompatibilityInfo: mCompatibilityFlags - 0
+08-20 16:51:09.934  7686  7803 D CompatibilityInfo: applicationDensity - 480
+08-20 16:51:09.934  7686  7803 D CompatibilityInfo: applicationScale - 1.0
+--------- beginning of system
+08-20 16:51:09.936  7686  7686 I ActivityManager: Idle maintenance over +30m0s32ms low RAM for +12m8s676ms
+08-20 16:51:09.937   737  7472 E WifiHAL : Received UMAC message with insufficent length: 128
+08-20 16:51:09.938   737  7472 E WifiHAL : Received UMAC message with insufficent length: 914
+08-20 16:51:09.939   737  7472 E WifiHAL : Received UMAC message with insufficent length: 48
+08-20 16:51:09.942  7686  7686 I MountServiceIdlerInjector: sNextTrimDuration :  900000
+08-20 16:51:11.469  7686  8043 D WificondControl: Scan result ready event
+08-20 16:51:11.471   737  7472 E WifiHAL : Received UMAC message with insufficent length: 48
+08-20 16:51:11.471   737  7472 I chatty  : uid=1010 wifi@1.0-servic identical 1 line
+08-20 16:51:11.471   737  7472 E WifiHAL : Received UMAC message with insufficent length: 48
+08-20 16:51:11.471   737  7472 E WifiHAL : Received UMAC message with insufficent length: 914
+08-20 16:51:11.471   737  7472 E WifiHAL : Received UMAC message with insufficent length: 128
+08-20 16:51:11.471   737  7472 E WifiHAL : Received UMAC message with insufficent length: 128
+08-20 16:51:11.478  1018  2426 I LOWI-8.6.0.33: [LOWI-Scan] lowi_close_record:Scan done in 342088968ms, 33 APs in scan results
+08-20 16:51:11.492  7686  7784 D WifiGbk : adding bss - Bss("杨洋":6c:19:c0:e5:ac:de, isGbk=false, security=PSK, level=-63, frequency=2462)
+08-20 16:51:14.088  7686  7803 D CompatibilityInfo: mCompatibilityFlags - 0
+08-20 16:51:14.088  7686  7803 D CompatibilityInfo: applicationDensity - 480
+08-20 16:51:14.088  7686  7803 D CompatibilityInfo: applicationScale - 1.0
+08-20 16:51:14.099  8543  8543 D mem_compactservice: set memory schedule Job sNextCompactDuration : 900000
+08-20 16:51:15.585  7686  7686 W Binder:7686_6: type=1400 audit(0.0:18165): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:su:s0 tclass=unix_stream_socket permissive=0
+08-20 16:51:19.665  7686  7686 W Binder:7686_6: type=1400 audit(0.0:18168): avc: denied { sigstop } for scontext=u:r:system_server:s0 tcontext=u:r:untrusted_app_27:s0:c512,c768 tclass=process permissive=0
+08-20 16:51:19.678  7686  8043 I ActivityManager: Force stopping cn.rongcloud.rtc appid=10029 user=0: from process:15925
+08-20 16:51:19.679  7686  8043 I AutoStartManagerService: MIUILOG- Reject RestartService packageName :cn.rongcloud.rtc uid : 10029
+08-20 16:51:19.679  7686  8043 D AutoStartManagerService: prepare force stop p:14018 s: 19
+08-20 16:51:19.679  7686  8043 I Process : Sending signal. PID: 14018 SIG: 19
+08-20 16:51:19.680  7686  8043 I ActivityManager: Killing 14018:cn.rongcloud.rtc:ipc/u0a29 (adj 700): stop cn.rongcloud.rtc: from process:15925
+08-20 16:51:19.692  7686  7706 W libprocessgroup: kill(-14018, 9) failed: No such process
+08-20 16:51:19.693  7686  8043 I AutoStartManagerService: MIUILOG- Reject RestartService packageName :cn.rongcloud.rtc uid : 10029
+08-20 16:51:19.693  7686  7704 V UidProcStateHelper: process died:[14018,10029]
+08-20 16:51:19.694  8626  8680 W PushService: 2019-08-20 16:51:19,694 - [WARN::PushService] - onProcessDied:pid = 14018,died-uid=10029
+08-20 16:51:19.696  7686  8043 I ActivityManager: Killing 13962:cn.rongcloud.rtc/u0a29 (adj 700): stop cn.rongcloud.rtc: from process:15925
+08-20 16:51:19.698  7686  7706 W libprocessgroup: kill(-14018, 9) failed: No such process
+08-20 16:51:19.700  7686  8043 I ActivityManager:   Force finishing activity ActivityRecord{6ff3e9e u0 cn.rongcloud.rtc/.MainPageActivity t87}
+08-20 16:51:19.703  7686  7706 W libprocessgroup: kill(-14018, 9) failed: No such process
+08-20 16:51:19.704  9526  9642 D ActiveStateController: updateStateForUidActiveChangedLocked, uid: 10029 active: false
+08-20 16:51:19.704  9526  9642 D PowerKeeper.FrozenApp: >>> event = 16 >>> state = 1 uid 10029
+08-20 16:51:19.704  9526  9642 D PowerKeeper.FrozenApp: updateWakelockBlockedUid, uid = 10029, isBlocked = false
+08-20 16:51:19.704  7686  7704 V UidProcStateHelper: process died:[13962,10029]
+08-20 16:51:19.705  8626  8680 W PushService: 2019-08-20 16:51:19,705 - [WARN::PushService] - onProcessDied:pid = 13962,died-uid=10029
+08-20 16:51:19.705  9526  9686 D WakelockManagerService: updateWakelockInfoLocked, Component ComponentInfo{com.miui.powerkeeper/com.miui.powerkeeper.controller.FrozenAppController}, uid = 10029, enable = false, tagList = null
+08-20 16:51:19.707  7686  8667 V LocationPolicy: writePolicyLocked()
+08-20 16:51:19.708  7686  7706 W libprocessgroup: kill(-14018, 9) failed: No such process
+08-20 16:51:19.695  7686  7686 W Binder:7686_6: type=1400 audit(0.0:18169): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:su:s0 tclass=unix_stream_socket permissive=0
+08-20 16:51:19.710  7847  7847 D EventBus: [7847, u0] send(AppTransitionFinishedEvent)
+08-20 16:51:19.710  7847  7847 D EventBus: [7847, u0]  -> ForcedResizableInfoActivityController [0xfe4220d, P1] onBusEvent(AppTransitionFinishedEvent)
+08-20 16:51:19.710  7847  7847 D EventBus: [7847, u0] onBusEvent(AppTransitionFinishedEvent) duration: 20 microseconds, avg: 370
+08-20 16:51:19.713  7686  8043 D PowerKeeperPolicy: Caller[1000] updateWakelockBlockedUid:uid=10029, tag=null, block=false
+08-20 16:51:19.714  7686  7706 W libprocessgroup: kill(-14018, 9) failed: No such process
+08-20 16:51:19.714  9526  9686 D WakelockManagerService: updateWakelockBlockedUid, uid = 10029, tag = null, isBlocked = false
+08-20 16:51:19.719  7686  7706 W libprocessgroup: kill(-14018, 9) failed: No such process
+08-20 16:51:19.725  7686  7706 W libprocessgroup: kill(-14018, 9) failed: No such process
+08-20 16:51:19.729  7571  7571 I Zygote  : Process 14018 exited due to signal (9)
+08-20 16:51:19.731  7686  7706 W libprocessgroup: kill(-14018, 9) failed: No such process
+08-20 16:51:19.731  7686  7706 I libprocessgroup: Successfully killed process cgroup uid 10029 pid 14018 in 38ms
+08-20 16:51:19.731  7686  7706 W libprocessgroup: Failed to open process cgroup uid 10029 pid 13962: No such file or directory
+08-20 16:51:19.731  7686  7706 E libprocessgroup: Error encountered killing process cgroup uid 10029 pid 13962: No such file or directory
+08-20 16:51:19.737  8568  8568 D RegisteredServicesCache: Intent action: android.intent.action.PACKAGE_RESTARTED
+08-20 16:51:19.725   778   778 W Binder:778_7: type=1400 audit(0.0:18172): avc: denied { connectto } for path="/dev/socket/logd" scontext=u:r:audioserver:s0 tcontext=u:r:logd:s0 tclass=unix_stream_socket permissive=0
+08-20 16:51:19.738  9526  9642 D ActiveStateController: updateStateForUidActiveChangedLocked, uid: 10029 active: false
+08-20 16:51:19.739  9526  9642 D PowerKeeper.FrozenApp: >>> event = 16 >>> state = 3 uid 10029
+08-20 16:51:19.739  8010  8010 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntent: No UICC
+08-20 16:51:19.739  8010  8010 D CarrierSvcBindHelper: No carrier app for: 0
+08-20 16:51:19.739  9526  9642 D PowerKeeper.FrozenApp: updateWakelockBlockedUid, uid = 10029, isBlocked = false
+08-20 16:51:19.739  8010  8010 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntent: No UICC
+08-20 16:51:19.739  8010  8010 D CarrierSvcBindHelper: No carrier app for: 1
+08-20 16:51:19.739  9526  9686 D WakelockManagerService: updateWakelockInfoLocked, Component ComponentInfo{com.miui.powerkeeper/com.miui.powerkeeper.controller.FrozenAppController}, uid = 10029, enable = false, tagList = null
+08-20 16:51:19.739  9526  9686 W WakelockManagerService: uid: 10029 is unblock state
+08-20 16:51:19.740  7686  8667 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ TRACK_DEFAULT id=54, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10029] ], android.os.BinderProxy@80e950b)
+08-20 16:51:19.740  7686  8786 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ LISTEN id=55, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10029] ], android.os.BinderProxy@bfc8cda)
+08-20 16:51:19.741  7686  7711 W ActivityManager: setHasOverlayUi called on unknown pid: 13962
+08-20 16:51:19.741  7686  7786 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=54, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Unwanted:  Uid: 10029] ] (release request)
+08-20 16:51:19.743  7992  7992 D QcrilMsgTunnelIfaceManager: handleMessage what = 1
+08-20 16:51:19.743  7992  7992 I QcrilOemhookMsgTunnel: [0]invokeOemRilRequestRaw: serial=1108 length=24
+08-20 16:51:19.746  7992  8169 I QcrilOemhookMsgTunnel: [0]processOemHookResponse serial no: 1108 error: 0length=0
+08-20 16:51:19.746  7992  7992 D QcrilMsgTunnelIfaceManager: handleMessage what = 2
+08-20 16:51:19.747  7992  8169 I QcrilOemhookMsgTunnel: [0]processOemHookIndication length=28
+08-20 16:51:19.747  7992  7992 D QcrilMsgTunnelIfaceManager: handleMessage what = 0
+08-20 16:51:19.748  7686  8531 V BackupManagerConstants: getKeyValueBackupIntervalMilliseconds(...) returns 14400000
+08-20 16:51:19.748  7686  8531 V BackupManagerConstants: getKeyValueBackupFuzzMilliseconds(...) returns 600000
+08-20 16:51:19.748  7686  8531 V BackupManagerConstants: getKeyValueBackupRequiredNetworkType(...) returns 1
+08-20 16:51:19.748  7686  8531 V BackupManagerConstants: getKeyValueBackupRequireCharging(...) returns true
+08-20 16:51:19.748  7686  8531 V KeyValueBackupJob: Scheduling k/v pass in 243 minutes
+08-20 16:51:19.750  7992  7992 D QcrilMsgTunnelIfaceManager: handleMessage what = 1
+08-20 16:51:19.750  7992  7992 I QcrilOemhookMsgTunnel: [1]invokeOemRilRequestRaw: serial=1109 length=24
+08-20 16:51:19.752  7571  7571 I Zygote  : Process 13947 exited cleanly (137)
+08-20 16:51:19.754  7992  8169 I QcrilOemhookMsgTunnel: [1]processOemHookResponse serial no: 1109 error: 0length=0
+08-20 16:51:19.754  7992  7992 D QcrilMsgTunnelIfaceManager: handleMessage what = 2
+08-20 16:51:19.755  7992  8169 I QcrilOemhookMsgTunnel: [1]processOemHookIndication length=28
+08-20 16:51:19.755  7992  7992 D QcrilMsgTunnelIfaceManager: handleMessage what = 0
+08-20 16:51:19.757  8568  8568 W com.android.nf: resources.arsc in APK '/data/app/com.sankuai.meituan-WYN7m67h16h2HSAwzPY0mg==/base.apk' is compressed.
+08-20 16:51:19.759  7686 19951 I SplashScreenServiceDelegate: None for cn.rongcloud.rtc
+08-20 16:51:19.759  7686 19951 I ActivityManager: START u0 {act=android.intent.action.MAIN flg=0x10000000 cmp=cn.rongcloud.rtc/.util.LauncherActivity} from uid 0
+08-20 16:51:19.762  7686 19951 E ANDR-PERF-JNI: com_qualcomm_qtiperformance_native_perf_io_prefetch_start
+08-20 16:51:19.767  7686 19951 D CompatibilityInfo: mCompatibilityFlags - 0
+08-20 16:51:19.767  7686 19951 D CompatibilityInfo: applicationDensity - 480
+08-20 16:51:19.768  7686 19951 D CompatibilityInfo: applicationScale - 1.0
+08-20 16:51:19.768  7686 19951 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+08-20 16:51:19.769  8049  8049 D ScreenElementRoot: pause
+08-20 16:51:19.770  8049  8049 I NotifierManager: onUnregister: miui.maml.NotifierManager$MultiBroadcastNotifier@fe71dac
+08-20 16:51:19.772  8049  8393 I RenderThread: RenderThread paused, waiting for signal
+08-20 16:51:19.776  7571  7571 I zygote  : Ignoring open file descriptor 3
+08-20 16:51:19.776  7571  7571 I zygote  : Ignoring open file descriptor 4
+08-20 16:51:19.777  7686  7703 I set_top_app: success /proc/8049/task/8049/top_app:0
+08-20 16:51:19.777  7686  7703 I set_top_app: success /proc/8049/task/8386/top_app:0
+08-20 16:51:19.784 15936 15936 I n.rongcloud.rt: Late-enabling -Xcheck:jni
+08-20 16:51:19.784  8049  8321 D Launcher: disableStatusBarClock:false
+08-20 16:51:19.785  7847  7847 D StatusBar: disable<e i a s b h r c!s > disable2<q i n g r >
+08-20 16:51:19.785  7847  7847 D StatusBarClock:  isNormalMode= true clock visible=true
+08-20 16:51:19.799  8568  8568 D RegisteredServicesCache: Adding service: ComponentInfo{com.sankuai.meituan/com.meituan.android.quickpass.manage.lib.service.ApduService} AIDs: [325041592E5359532E4444463031, A000000333010101, A000000333010102, A000000333010103, A000000333010106]
+08-20 16:51:19.799  8568  8568 D RegisteredServicesCache:  Reading service state data always from file
+08-20 16:51:19.799  8568  8568 D RegisteredServicesCache: ServiceStateFileVersion=1.0
+08-20 16:51:19.799  8568  8568 E RegisteredServicesCache: Next Tag=services
+08-20 16:51:19.799  8568  8568 E RegisteredServicesCache: 1invalidateCache:WriteServiceStateToFile
+08-20 16:51:19.799  8568  8568 E RegisteredServicesCache:  Writing service state Data Always
+08-20 16:51:19.806  8568  8568 D CardEmulationManager: Current default: ComponentInfo{com.sankuai.meituan/com.meituan.android.quickpass.manage.lib.service.ApduService}
+08-20 16:51:19.806  8568  8568 D CardEmulationManager: Default payment service still ok.
+08-20 16:51:19.806  8568  8568 D RegisteredAidCache: onServicesUpdated
+08-20 16:51:19.806  8568  8568 D RegisteredAidCache: generateServiceMap component: ComponentInfo{com.sankuai.meituan/com.meituan.android.quickpass.manage.lib.service.ApduService}
+08-20 16:51:19.806  8568  8568 D RegisteredAidCache: generateAidCacheLocked: starting with aid 325041592E5359532E4444463031
+08-20 16:51:19.806  8568  8568 D RegisteredAidCache: Exact AID, resolving.
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: resolveAidLocked: DECISION: routing to payment default default ApduService: ComponentInfo{com.sankuai.meituan/com.meituan.android.quickpass.manage.lib.service.ApduService}, description: 美团支付云闪付 美团版, Static AID Groups: Category: payment, AIDs:325041592E5359532E4444463031, A000000333010101, A000000333010102, A000000333010103, A000000333010106, , Dynamic AID Groups: 
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: AIDs: [325041592E5359532E4444463031] were resolved.
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: generateAidCacheLocked: starting with aid A000000333010101
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: Exact AID, resolving.
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: resolveAidLocked: DECISION: routing to payment default default ApduService: ComponentInfo{com.sankuai.meituan/com.meituan.android.quickpass.manage.lib.service.ApduService}, description: 美团支付云闪付 美团版, Static AID Groups: Category: payment, AIDs:325041592E5359532E4444463031, A000000333010101, A000000333010102, A000000333010103, A000000333010106, , Dynamic AID Groups: 
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: AIDs: [A000000333010101] were resolved.
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: generateAidCacheLocked: starting with aid A000000333010102
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: Exact AID, resolving.
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: resolveAidLocked: DECISION: routing to payment default default ApduService: ComponentInfo{com.sankuai.meituan/com.meituan.android.quickpass.manage.lib.service.ApduService}, description: 美团支付云闪付 美团版, Static AID Groups: Category: payment, AIDs:325041592E5359532E4444463031, A000000333010101, A000000333010102, A000000333010103, A000000333010106, , Dynamic AID Groups: 
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: AIDs: [A000000333010102] were resolved.
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: generateAidCacheLocked: starting with aid A000000333010103
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: Exact AID, resolving.
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: resolveAidLocked: DECISION: routing to payment default default ApduService: ComponentInfo{com.sankuai.meituan/com.meituan.android.quickpass.manage.lib.service.ApduService}, description: 美团支付云闪付 美团版, Static AID Groups: Category: payment, AIDs:325041592E5359532E4444463031, A000000333010101, A000000333010102, A000000333010103, A000000333010106, , Dynamic AID Groups: 
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: AIDs: [A000000333010103] were resolved.
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: generateAidCacheLocked: starting with aid A000000333010106
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: Exact AID, resolving.
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: resolveAidLocked: DECISION: routing to payment default default ApduService: ComponentInfo{com.sankuai.meituan/com.meituan.android.quickpass.manage.lib.service.ApduService}, description: 美团支付云闪付 美团版, Static AID Groups: Category: payment, AIDs:325041592E5359532E4444463031, A000000333010101, A000000333010102, A000000333010103, A000000333010106, , Dynamic AID Groups: 
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: AIDs: [A000000333010106] were resolved.
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: Exact or Prefix AID.A000000333010106
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: AIDs: [A000000333010106] were resolved.
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: Exact or Prefix AID.A000000333010103
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: AIDs: [A000000333010103] were resolved.
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: Exact or Prefix AID.A000000333010102
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: AIDs: [A000000333010102] were resolved.
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: Exact or Prefix AID.A000000333010101
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: AIDs: [A000000333010101] were resolved.
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: Exact or Prefix AID.325041592E5359532E4444463031
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: AIDs: [325041592E5359532E4444463031] were resolved.
+08-20 16:51:19.807  8568  8568 D RegisteredAidCache: Not updating routing table because NFC is off.
+08-20 16:51:19.807  8568  8568 D RegisteredServicesCache: ApduService: ComponentInfo{com.sankuai.meituan/com.meituan.android.quickpass.manage.lib.service.ApduService}, description: 美团支付云闪付 美团版, Static AID Groups: Category: payment, AIDs:325041592E5359532E4444463031, A000000333010101, A000000333010102, A000000333010103, A000000333010106, , Dynamic AID Groups: 
+08-20 16:51:19.808  8568  8568 D RegisteredNfcFServicesCache: Service unchanged, not updating
+08-20 16:51:19.833 15951 15951 I start_valgrind.sh: executing /data/local/start_valgrind.sh failed: Permission denied
+08-20 16:51:19.833 15952 15952 E logwrapper: executing /data/local/start_valgrind.sh failed: Permission denied
+08-20 16:51:19.834 15951 15951 I start_valgrind.sh: start_valgrind.sh terminated by exit(255)
+08-20 16:51:19.835  7571  7571 I Zygote  : Process 15936 exited cleanly (255)
+08-20 16:51:19.835  7571  7571 W Zygote  : Error reading pid from wrapped process, child may have died
+08-20 16:51:19.836  7686  7705 D Boost   : hostingType=activity, hostingName=cn.rongcloud.rtc/.util.LauncherActivity, callerPackage=null, isSystem=true, isBoostNeeded=false.
+08-20 16:51:19.836  7686  7705 I ActivityManager: Start proc 15936:cn.rongcloud.rtc/u0a29 for activity cn.rongcloud.rtc/.util.LauncherActivity caller=null
+08-20 16:51:24.805  7686  7711 I Timeline: Timeline: App_transition_ready time:73332733
+08-20 16:51:24.811  7847  7847 D StatusBar: disable<e i a s b h r c s > disable2<q i n g r >
+08-20 16:51:24.811  7847  7847 D StatusBarClock:  isNormalMode= true clock visible=true
+08-20 16:51:25.243  7847  7847 D EventBus: [7847, u0] send(AppTransitionFinishedEvent)
+08-20 16:51:25.244  7847  7847 D EventBus: [7847, u0]  -> ForcedResizableInfoActivityController [0xfe4220d, P1] onBusEvent(AppTransitionFinishedEvent)
+08-20 16:51:25.244  7847  7847 D EventBus: [7847, u0] onBusEvent(AppTransitionFinishedEvent) duration: 61 microseconds, avg: 369
+08-20 16:51:25.246  7686  7746 I Timeline: Timeline: App_transition_stopped time:73333174
+08-20 16:51:25.246  7847  7847 D EventBus: [7847, u0] send(AppTransitionFinishedEvent)
+08-20 16:51:25.246  7847  7847 D EventBus: [7847, u0]  -> ForcedResizableInfoActivityController [0xfe4220d, P1] onBusEvent(AppTransitionFinishedEvent)
+08-20 16:51:25.246  7847  7847 D EventBus: [7847, u0] onBusEvent(AppTransitionFinishedEvent) duration: 51 microseconds, avg: 369
+08-20 16:51:29.740  7686  8786 D CompatibilityInfo: mCompatibilityFlags - 0
+08-20 16:51:29.740  7686  8786 D CompatibilityInfo: applicationDensity - 480
+08-20 16:51:29.740  7686  8786 D CompatibilityInfo: applicationScale - 1.0
+08-20 16:51:29.772  7686  7703 W ActivityManager: Launch timeout has expired, giving up wake lock!
+08-20 16:51:29.802  8626 18677 D com.xiaomi.common.Network: Http POST Response Code: 200
+08-20 16:51:29.838  7686  7703 W ActivityManager: Process ProcessRecord{c707b65 15936:cn.rongcloud.rtc/u0a29} failed to attach
+08-20 16:51:29.839  7686  7703 I ActivityManager: Killing 15936:cn.rongcloud.rtc/u0a29 (adj -10000): start timeout
+08-20 16:51:29.839  7686  7706 W libprocessgroup: kill(-15936, 9) failed: No such process
+08-20 16:51:29.839  7686  7706 I libprocessgroup: Successfully killed process cgroup uid 10029 pid 15936 in 0ms
+08-20 16:51:48.426   737  7472 E WifiHAL : Received UMAC message with insufficent length: 50
+08-20 16:51:48.428   737  7472 E WifiHAL : Received UMAC message with insufficent length: 45
+08-20 16:51:48.429   737  7472 E WifiHAL : Received UMAC message with insufficent length: 50
+08-20 16:51:48.429  7441  7441 I wpa_supplicant: wlan0: WPA: Group rekeying completed with 24:a2:e1:eb:9e:0f [GTK=CCMP]
+08-20 16:51:48.433  7686  7826 D MiuiWifiStateMachine: enter L2ConnectedState
+08-20 16:51:48.433   737  7472 E WifiHAL : Received UMAC message with insufficent length: 48
+08-20 16:51:48.434   737  7472 E WifiHAL : Received UMAC message with insufficent length: 128
+08-20 16:51:48.434   737  7472 E WifiHAL : Received UMAC message with insufficent length: 48
+08-20 16:51:48.434   737  7472 E WifiHAL : Received UMAC message with insufficent length: 45
+08-20 16:51:50.755   713   713 W healthd : type=1400 audit(0.0:18177): avc: denied { read } for name="type" dev="sysfs" ino=43042 scontext=u:r:healthd:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+08-20 16:51:57.050   961  1072 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+08-20 16:52:00.012  7847  7847 D KeyguardUpdateMonitor: handleTimeUpdate
+08-20 16:52:49.590  9526  9688 D PowerKeeper.Event: notifyCpuStatsUpdate
+08-20 16:52:50.755   713   713 W healthd : type=1400 audit(0.0:18178): avc: denied { read } for name="type" dev="sysfs" ino=43042 scontext=u:r:healthd:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+08-20 16:52:57.052   961  1072 E storaged: getDiskStats failed with result NOT_SUPPORTED and size 0
+08-20 16:52:57.978  9871  9956 I SmartPhoneTag__DataManager: MSG_STORE_INTO_DB getSData done
+08-20 16:52:57.981  9871  9956 I SmartPhoneTag__DataManager: DB size:57
+08-20 16:52:57.982  9871  9956 I SmartPhoneTag__DataManager: WDCT:1
+08-20 16:53:00.011  7847  7847 D KeyguardUpdateMonitor: handleTimeUpdate
