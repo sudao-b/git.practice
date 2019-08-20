@@ -132,20 +132,22 @@ push_sh_to_device() {
 #chmod -R 777 \"/data/local/tmp/\"\n
 #chmod -R 777 \"/data/local/Inst/bin\"\n
 #exec /data/local/Inst/bin/valgrind \$VGPARAMS \$* "
+#export VALGRIND_LIB=\"/data/local/Inst/lib/valgrind/\"\n
 #exec valgrind \$VGPARAMS \$* "
-#export VALGRIND_LIB=\"/system/lib/valgrind/\"\n
+#VGPARAMS='-v --error-limit=no --trace-children=yes --log-file=/sdcard/valgrind.log.%p --tool=memcheck --leak-check=full --show-reachable=yes'
+
 	START_CALGRIND_SH="#!/system/bin/sh \n
 
-export VALGRIND_LIB=\"/data/local/Inst/lib/valgrind/\"\n
+export VALGRIND_LIB=\"/system/lib/valgrind/\"\n
 PACKAGE=\"${PACKAGE_NAME}\" \n
 VGPARAMS='${VALGRIND_PARAMS}' \n
+VGPARAMS='-v --error-limit=no --trace-children=yes --log-file=/sdcard/valgrind.log.%p --tool=memcheck --leak-check=full --show-reachable=yes'
 export TMPDIR=/data/data/\$PACKAGE \n
-exec /data/local/Inst/bin/valgrind \$VGPARAMS \$* "
-
+exec valgrind \$VGPARAMS \$* "
 	echo -e $START_CALGRIND_SH > start_valgrind.sh
 
-	adb push start_valgrind.sh /data/local/
-	#adb push start_valgrind.sh /system/bin
+	#adb push start_valgrind.sh /data/local/
+	adb push start_valgrind.sh /system/bin
 	if [ $? -ne 0 ]; then
 		rm -f ./start_valgrind.sh
 		echo "FAIL! Ensure adb is installed and device is pluged!"
@@ -153,8 +155,8 @@ exec /data/local/Inst/bin/valgrind \$VGPARAMS \$* "
 	fi
 	rm -f ./start_valgrind.sh
 
-	adb shell chmod 777 /data/local/start_valgrind.sh
-        #adb shell chmod 777 /system/bin/start_valgrind.sh
+	#adb shell chmod 777 /data/local/start_valgrind.sh
+        adb shell chmod 777 /system/bin/start_valgrind.sh
 	if [ $? -ne 0 ]; then
 		echo "FAIL! Can not execute: adb shell chmod 777 /data/local/start_valgrind.sh"
 		exit 1
@@ -173,8 +175,8 @@ replace_lib() {
 }
 
 launch_valgrind() {
-	LOG_WRAPPER="logwrapper /data/local/start_valgrind.sh"
-        #LOG_WRAPPER="logwrapper start_valgrind.sh"
+	#LOG_WRAPPER="logwrapper /data/local/start_valgrind.sh"
+        LOG_WRAPPER="logwrapper start_valgrind.sh"
 	adb root
 	echo -e "setprop wrap.$PACKAGE_NAME \"$LOG_WRAPPER\"\n exit" > .temp
 	adb shell < .temp
