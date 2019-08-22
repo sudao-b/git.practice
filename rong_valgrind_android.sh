@@ -54,10 +54,10 @@ install_valgrind() {
 
 input_parameter() {
 	if [[ ! -e .sss_last_input ]]; then
-		PACKAGE_NAME="cn.rongcloud.rtc"
-		APP_MAIN_ACTIVITY="util.LauncherActivity"
+		PACKAGE_NAME="cn.rongcloud.leak"
+		APP_MAIN_ACTIVITY="MainActivity"
 		#SYMBOLIZED_LIB_PATH="`pwd`/valgrind_test/app/build/intermediates/cmake/debug/obj/armeabi-v7a"
-		SYMBOLIZED_LIB_PATH="/mnt/ntfs2/rong74/daya/rtc-sdk-android/app/libs/armeabi-v7a"
+		SYMBOLIZED_LIB_PATH="/mnt/ntfs2/audio.process/memleak/app/build/intermediates/cmake/debug/obj/arm64-v8a"
 		echo -e "${PACKAGE_NAME}\n${APP_MAIN_ACTIVITY}\n${SYMBOLIZED_LIB_PATH}" > .sss_last_input
 	fi
 
@@ -66,7 +66,7 @@ input_parameter() {
 	read VALGRIND_PARAMS
 	echo "$VALGRIND_PARAMS" | grep -q "log-file"
 	if [[ $? -ne 0 ]]; then
-		LOG_FILE="/cn.rongcloud.rtc/valgrind/"
+		LOG_FILE="/cn.rongcloud.leak/valgrind/"
 		#VALGRIND_PARAMS="$VALGRIND_PARAMS --log-file=/sdcard/valgrind.%p.log"
 		#VALGRIND_PARAMS="$VALGRIND_PARAMS --log-file=/data/data/$LOG_FILE/"
 		VALGRIND_PARAMS="$VALGRIND_PARAMS"
@@ -134,13 +134,15 @@ push_sh_to_device() {
 #export VALGRIND_LIB=\"/data/local/Inst/lib/valgrind/\"\n
 #exec valgrind \$VGPARAMS \$* "
 #VGPARAMS='-v --error-limit=no --trace-children=yes --log-file=/sdcard/valgrind.log.%p --tool=memcheck --leak-check=full --show-reachable=yes'
+#export ANDROID_DATA=\"/data/local/tmp\"\n
+#export ANDROID_DATA=/data/data/\$PACKAGE/cache \n
 
 	START_CALGRIND_SH="#!/system/bin/sh \n
 
-export VALGRIND_LIB=\"/system/lib/valgrind/\"\n
 PACKAGE=\"${PACKAGE_NAME}\" \n
+export VALGRIND_LIB=/system/lib64/valgrind \n
 VGPARAMS='${VALGRIND_PARAMS}' \n
-VGPARAMS='-v --error-limit=no --trace-children=yes --log-file=/sdcard/valgrind.log.%p --tool=memcheck --leak-check=full --show-reachable=yes'
+VGPARAMS='-v --error-limit=no --trace-children=yes --tool=memcheck --leak-check=full --show-reachable=yes' \n
 export TMPDIR=/data/data/\$PACKAGE \n
 exec valgrind \$VGPARAMS \$* "
 	echo -e $START_CALGRIND_SH > start_valgrind.sh
@@ -156,6 +158,7 @@ exec valgrind \$VGPARAMS \$* "
 
 	#adb shell chmod 777 /data/local/start_valgrind.sh
         adb shell chmod 777 /system/bin/start_valgrind.sh
+        adb shell chown root:root /system/bin/start_valgrind.sh
 	if [ $? -ne 0 ]; then
 		echo "FAIL! Can not execute: adb shell chmod 777 /data/local/start_valgrind.sh"
 		exit 1
@@ -189,7 +192,7 @@ launch_valgrind() {
 	echo -e "\"$PACKAGE_NAME\" will relaunch..."
 	adb shell am force-stop $PACKAGE_NAME
 	adb shell am start -a android.intent.action.MAIN -n "$PACKAGE_NAME/.$APP_MAIN_ACTIVITY"
-	clear
+	#clear
 	echo "Launching app..."
 	echo "This may take as long as a song. Have a cup of coffee ☕️ "
 }
